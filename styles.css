@@ -8,4 +8,77 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
+}
+
+#main {
+    height: 90vh;
+    width: 98vw;
+}
+
+#main #nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem 0.5rem 0 0;
+}
+
+#main #nav .menu {
+    width: 25px;
+    height: 25px;
+    margin: 0 1rem;
+    color: #5f6368;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-112%, -50%);
+    z-index: 2;
+}
+
+#main #nav .menu-holder {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    background: transparent;
+}
+
+#main #nav .menu-holder:hover {
+    background: rgba(60,64,67,0.08);
+}
+
+#main #nav a {
+    font-size: 13px;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87)
+}
+
+#main #nav a:hover {
+    text-decoration: underline;
+}
+
+#main #nav .sign-in {
+    background-color: #2b7de9;
+    color: #fff;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#main #nav .sign-in:hover {
+    box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
+
+}
+
+
+
+
+.search-btn svg{
+    width: 30px;
+    height: 30px;
 }
